@@ -16,7 +16,7 @@ header,footer,main {
   "like like"
   "footer footer";
   grid-template-columns: 900px;
-  grid-template-rows: 150px 600px 300px 800px; 
+  grid-template-rows: 250px 600px 600px 800px; 
   position: relative;
 }
 header {
@@ -57,6 +57,10 @@ nav a:nth-child(4):hover~.line{
 {grid-area: main;
 background-color:beige;
 }
+.profile{width: 250px;
+display:flex;
+display:inline;
+clear:right;}
 .who
 {grid-area: who;
  border: 1px dotted #ffc200;
@@ -66,7 +70,10 @@ h1,h2,p{
   letter-spacing: 0.3px;
   padding: 10px 0px 10px 10px;
 }
-span{color:#ffc200;}
+p{
+  line-height:30px;}
+span{color:#ffc200;
+}
 
 .like {
   grid-area: like;}
@@ -75,7 +82,7 @@ span{color:#ffc200;}
    display: grid;
   grid-gap: 10px;
   grid-template-areas:
-  "card1 card1"
+    "card1 card1"
     "card2 card2"
     "card3 card3";
   grid-template-columns: 300px;
@@ -85,9 +92,9 @@ span{color:#ffc200;}
 }
 .col img{
   width: 200px;
-  height: auto;
-  position: relative;
-  align-self: center;
+  height:200px;
+  margin:2px;
+    position: relative;
 }
 .card1{grid-area: card1;}
 .card2{grid-area: card2;}
