@@ -1,0 +1,105 @@
+*{
+  font-family: 'Nanum Gothic', sans-serif;
+  margin:0;
+}
+
+header,footer,main {
+  width: 100%;}
+
+.container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+  "header header"
+  "main main"
+  "who who"
+  "like like"
+  "footer footer";
+  grid-template-columns: 900px;
+  grid-template-rows: 150px 600px 300px 800px; 
+  position: relative;
+}
+header {
+  position: fixed;
+  border-bottom: 1px solid #4a4a4a;
+  grid-area: header;
+  background-color:white;
+}
+nav
+{position:absoulte;
+  word-spacing: 2em;
+margin-left:200px;}
+nav a {
+  color: #4a4a4a;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  padding: 1em 0;
+  margin-left:45px;
+}
+.line {
+    width: 125px;
+    height: 3px;
+    background-color: #ffc200;
+    }
+nav a:hover {
+color:#ffc200;}
+nav a:nth-child(2):hover~.line{
+  transform: translate(140px);
+}
+nav a:nth-child(3):hover~.line{
+  transform: translate(270px);
+}
+nav a:nth-child(4):hover~.line{
+  transform: translate(395px);
+}
+.main
+{grid-area: main;
+background-color:beige;
+}
+.who
+{grid-area: who;
+ border: 1px dotted #ffc200;
+}
+h1,h2,p{
+  margin: 10px 10px 10px 200px;
+  letter-spacing: 0.3px;
+  padding: 10px 0px 10px 10px;
+}
+span{color:#ffc200;}
+
+.like {
+  grid-area: like;}
+
+.col {
+   display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+  "card1 card1"
+    "card2 card2"
+    "card3 card3";
+  grid-template-columns: 300px;
+  grid-template-rows: repeat(3)200px; 
+  position: relative;
+  margin-left: 200px;
+}
+.col img{
+  width: 200px;
+  height: auto;
+  position: relative;
+  align-self: center;
+}
+.card1{grid-area: card1;}
+.card2{grid-area: card2;}
+.card3{grid-area: card3;}
+
+img{
+  margin-top: 20px;}
+.logo {
+  width: 20px;
+  height: auto;
+}
+footer {
+  background-color: lightgrey;
+  grid-area: footer;
+}
