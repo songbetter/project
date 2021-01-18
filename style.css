@@ -79,7 +79,7 @@ span{color:#ffc200;
 .like {
   grid-area: like;}
 
-#card {
+.card {
   display: grid;
   grid-gap: 1px;
   grid-template-areas:
@@ -92,7 +92,7 @@ span{color:#ffc200;
   margin-left: 200px;
 }
 
-#card img{
+.card img{
   width: 200px;
   height: 200px;
   margin: 2px;
