@@ -15,7 +15,6 @@ header,footer,.main {
   "who who"
   "like like"
   "footer footer";
-  grid-template-columns: 2250px;
   grid-template-rows: 250px 600px 600px 800px; 
   position: relative;
   
