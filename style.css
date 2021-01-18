@@ -3,7 +3,7 @@
   margin:0;
 }
 
-header,footer,main {
+header,footer,.main {
   width: 100%;}
 
 .container {
@@ -15,9 +15,10 @@ header,footer,main {
   "who who"
   "like like"
   "footer footer";
-  grid-template-columns: 900px;
+  grid-template-columns: 2250px;
   grid-template-rows: 250px 600px 600px 800px; 
   position: relative;
+  
 }
 header {
   position: fixed;
@@ -76,32 +77,32 @@ span{color:#ffc200;
 }
 
 .like {
-  grid-area: like;}
+  grid-area: like;
+background-color:blue;}
 
-.col {
+#col {
+  background-color: red;
    display: grid;
-  grid-gap: 10px;
+  grid-gap: 1px;
   grid-template-areas:
-    "card1 card1"
-    "card2 card2"
-    "card3 card3";
-  grid-template-columns: 300px;
-  grid-template-rows: repeat(3)200px; 
+    "card1 card4"
+    "card5 card8"
+    "card9 card12";
+  grid-template-columns: repeat(4,210px);
+  grid-template-rows: repeat(3,210px); 
   position: relative;
   margin-left: 200px;
 }
-.col img{
+#col img{
   width: 200px;
-  height:200px;
-  margin:2px;
+  height: 200px;
+  margin: 2px;
     position: relative;
 }
-.card1{grid-area: card1;}
-.card2{grid-area: card2;}
-.card3{grid-area: card3;}
 
 img{
-  margin-top: 20px;}
+  margin-top: 20px;
+}
 .logo {
   width: 20px;
   height: auto;
