@@ -80,7 +80,7 @@ span{color:#ffc200;
   grid-area: like;}
 
 #card {
-   display: grid;
+  display: grid;
   grid-gap: 1px;
   grid-template-areas:
     "card1 card4"
@@ -91,11 +91,12 @@ span{color:#ffc200;
   position: relative;
   margin-left: 200px;
 }
+
 #card img{
   width: 200px;
   height: 200px;
   margin: 2px;
-    position: relative;
+  position: relative;
 }
 
 img{
