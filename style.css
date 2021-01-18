@@ -77,11 +77,9 @@ span{color:#ffc200;
 }
 
 .like {
-  grid-area: like;
-background-color:blue;}
+  grid-area: like;}
 
 #col {
-  background-color: red;
    display: grid;
   grid-gap: 1px;
   grid-template-areas:
