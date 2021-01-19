@@ -24,6 +24,7 @@ header {
   border-bottom: 1px solid #4a4a4a;
   grid-area: header;
   background-color:white;
+  z-index: 1;
 }
 nav
 {position:absoulte;
