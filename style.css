@@ -4,20 +4,22 @@
 }
 
 header,footer,.main {
-  width: 100%;}
+  width: 100%;
+  }
 
 .container {
   display: grid;
   grid-gap: 10px;
   grid-template-areas:
-  "header header"
-  "main main"
-  "who who"
-  "like like"
-  "footer footer";
-  grid-template-rows: 250px 600px 600px 800px; 
+    "header header"
+    "main main"
+    "who who"
+    "like like"
+    "footer footer";
+  grid-template-columns: 1000px;
+  grid-template-rows: 131px 800px 800px 800px;
   position: relative;
-  
+  /* align-items: center; */
 }
 header {
   position: fixed;
@@ -55,10 +57,9 @@ nav a:nth-child(4):hover~.line{
   transform: translate(395px);
 }
 .main
-{grid-area: main;
-background-color:beige;
-}
-.profile{width: 250px;
+{/* text-align: center; */grid-area: main;background-color:beige;/* align-items: center; *//* padding-top: 140px; */}
+
+.profile{width: 200px;
 display:flex;
 display:inline;
 clear:right;}
@@ -71,6 +72,7 @@ h1,h2,p{
   letter-spacing: 0.3px;
   padding: 10px 0px 10px 10px;
 }
+h2{padding-top:171px}
 p{
   line-height:30px;}
 span{color:#ffc200;
@@ -81,20 +83,20 @@ span{color:#ffc200;
 
 .card {
   display: grid;
-  grid-gap: 1px;
+  grid-gap: 8px;
   grid-template-areas:
     "card1 card4"
     "card5 card8"
     "card9 card12";
-  grid-template-columns: repeat(4,210px);
-  grid-template-rows: repeat(3,210px); 
+  grid-template-columns: repeat(4,150px);
+  grid-template-rows: repeat(3,150px);
   position: relative;
   margin-left: 200px;
 }
 
 .card img{
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   margin: 2px;
   position: relative;
 }
